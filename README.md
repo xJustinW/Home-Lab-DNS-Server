@@ -1,9 +1,18 @@
-<h1>AD Block DNS Server Home Lab</h1>
+<h1>Home Lab: Personal DNS Server</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+<h2>Why I Created My Own DNS Server</h2>
+For this home lab project, I will be utilizing Adguard Home to create my very own DNS Server. This will provide my network with a few benefits that will increase security on my private network. Some of those benefits include:
+Ad Blocking
+Privacy protection
+Parental controls and filtering
+Protection against trackers and phishing
+This is a great way to implement rules of safety on the internet especially if multiple people who are on my personal network are not privy to the dangers of the web. 
+Adguard Home specifically provides an easy way for users to create a home server without needing an actual rack system or expensive gear to incorporate a DNS server. You can host the DNS server on a cloud provider or follow my path in which I have a Raspberry Pi 5 set up to provide the DNS functionality.
+
+Creating my own DNS server will allow me to control my network's domain name resolution process. To dive deeper, having my own DNS server grants me the capabilities of performance and security. Some of the benefits of having my own DNS server are as follows:
+- 
+
 <br />
 
 
