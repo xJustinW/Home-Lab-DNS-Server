@@ -18,6 +18,7 @@ Like stated before, this is a great way to take out some of the guesswork of avo
 <br />
 
 <h2>Wireshark: Reviewing DNS Requests Before My DNS Server Is Set Up</h2>
+Wireshark is a packet analyzer. I can select the type of network traffic I want to monitor and review the packets that come through. For this project, I will be reviewing the DNS requests and responses to demonstrate a proof of concept. That having your own DNS server can provide better privacy and security. 
 
 - <b>PowerShell</b> 
 - <b>Diskpart</b>
