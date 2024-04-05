@@ -1,22 +1,28 @@
 <h1>Home Lab: Personal DNS Server</h1>
-
+In this lab, I am documenting the steps I take in order to install Adguard Home on my Raspberry Pi to create my own personal DNS Server. The DNS server's main role on my network is to increase privacy andd security for any device that is on my network.
 
 <h2>Why I Created My Own DNS Server</h2>
-For this home lab project, I will be utilizing Adguard Home to create my very own DNS Server. This will provide my network with a few benefits that will increase security on my private network. Some of those benefits include:
-Ad Blocking
-Privacy protection
-Parental controls and filtering
-Protection against trackers and phishing
-This is a great way to implement rules of safety on the internet especially if multiple people who are on my personal network are not privy to the dangers of the web. 
-Adguard Home specifically provides an easy way for users to create a home server without needing an actual rack system or expensive gear to incorporate a DNS server. You can host the DNS server on a cloud provider or follow my path in which I have a Raspberry Pi 5 set up to provide the DNS functionality.
+Creating my own DNS server will allow me to control my network's domain name resolution process. To dive deeper, having my own DNS server grants me the capabilities of privacy and security. There are even very small instances of performance boosts that can be observed. Some of the benefits of having my own DNS server are as follows:
 
-Creating my own DNS server will allow me to control my network's domain name resolution process. To dive deeper, having my own DNS server grants me the capabilities of performance and security. Some of the benefits of having my own DNS server are as follows:
-- 
+- AD Blocking
+- DNS Request Blocking
+- Reduced Risk of Malware/Phishing
+- Safe Search
+- Parental Controls
+- DNS Rewrites
+- Very Slight Performance Boost
+- Much More!
+
+Like stated before, this is a great way to take out some of the guesswork of avoiding ads, trackers, and the wild west of what we call the internet. The imposed rules, filters, and blocklists will automate security practices. This project also has a sleek dashboard similar to that of a SIEM tool that I can use to monitor incoming and outgoing traffic. Although the DNS server will intervene when told to do so, this does not take away all the responsibility from the user who is accessing the network and internet. Anyone on my network must still practice safe measures. Coming up, I will show what a natural ad query request looks like and how my computer responds to it compared to its response to an ad query with our DNS server in place and active. 
 
 <br />
 
+<h2>Wireshark: Reviewing DNS Requests Before My DNS Server Is Set Up</h2>
 
-<h2>Languages and Utilities Used</h2>
+- <b>PowerShell</b> 
+- <b>Diskpart</b>
+
+<h2>Wireshark: Reviewing DNS Requests After My DNS Server Is Set Up</h2>
 
 - <b>PowerShell</b> 
 - <b>Diskpart</b>
