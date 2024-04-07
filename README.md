@@ -20,13 +20,19 @@ Like stated before, this is a great way to take out some of the guesswork of avo
 <h2>Wireshark: Reviewing DNS Requests Before My DNS Server Is Set Up</h2>
 Wireshark is a packet analyzer. I can select the type of network traffic I want to monitor and review the packets that come through. For this project, I will be reviewing the DNS requests and responses to demonstrate a proof of concept. That having your own DNS server can provide better privacy and security. 
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+<b> </b>
+
+<b>Full View of My Wireshark Instance</b>
+<img src="https://i.imgur.com/yf2Zo2k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<b>My Target DNS Query Response</b>
+<img src="https://i.imgur.com/Vs7f9CF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<b>DNS Query Response Answer</b>
+<img src="https://i.imgur.com/XyZwxTe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Wireshark: Reviewing DNS Requests After My DNS Server Is Set Up</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
 
 <h2>Environments Used </h2>
 
@@ -36,7 +42,7 @@ Wireshark is a packet analyzer. I can select the type of network traffic I want 
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/k3jtb6N.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
