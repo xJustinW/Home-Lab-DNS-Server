@@ -85,6 +85,27 @@ This will essentially send a request to the URL that is in the command to grab a
 
 <img src="https://i.imgur.com/dFzwNoC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+<h2>Configuring My DNS Server</h2>
+
+<b>Adguard Home provides my DNS server with a variety of configuration settings so that I  am able to fine tune my server how I want it. I will quickly go over these settings. A simple Google search will provide much more information if it is needed.</b>
+
+<b>Dashboard</b>
+<b>Settings</b>
+- General Settings
+- DNS Settings
+- Encryption Settings
+- Client Settings
+- DHCP Settings
+
+
+<b>Filters</b>
+- DNS Blocklists
+- DNS Allowlists
+- DNS Rewrites
+- Blocked Services
+- Custom Filtering Rules
+<b>Query Logs</b>
+
 
 <!--
  ```diff
