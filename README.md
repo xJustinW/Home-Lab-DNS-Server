@@ -66,11 +66,24 @@ Here are the details (answer) of the query response.
 
 <h2>DNS Server Setup</h2>
 
-<b>I will avoidi showing how I set up my Raspberry Pi as there are many tutorials that anyone can watch on Youtube. Just make sure you use the following command to get your Raspberry Pi updated with the latest updates/patches!</b>
+<b>I will avoid showing how I set up my Raspberry Pi as there are many tutorials that anyone can watch on Youtube. You will have to SSH into the deivce in order to complete the DNS server setup. Just make sure you use the following command to get your Raspberry Pi updated with the latest updates/patches!</b>
 
 - sudo apt update
 
+Once you have SSH'ed into the Pi and updated it, run the following command:
 
+- curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+
+<img src="https://i.imgur.com/GpA8lcp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Note: This screenshot is not from my personal Pi as I already have it installed and do not want to wipe my settings to get an accurate picture of the CLI at point of the installment.
+
+<b> </b>
+
+This will essentially send a request to the URL that is in the command to grab and download Adguard Home onto the PI. Once the download was finished, the CLI prompted me with an address for me to navigate to to complete setup of Adguard Home on the PI. The address led me to a login page where I had to update my password. Then, there was a setup page I had to follow in order to get my devices to connect to the DNS server that I just created. Since my ISP does not allow me to update the DNS settings of the provided all-in-one modem, I had to manually input the given DNS server addresses on my devices. Essentially, I went to my network settings on each device and navigated to the DNS Configuration settings. Here, I switched from automatic DNS to manual and addded every DNS address to each device. When I buy my own router, I will be able to setup the DNS addresses at the router level to avoid having to add the addresses on every new device. This has not become annoying yet as I do not have much people over for me to be connecting new devices but that time will come.
+
+<b> </b>
+
+<img src="https://i.imgur.com/dFzwNoC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 <!--
