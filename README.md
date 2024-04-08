@@ -35,7 +35,7 @@ Highlighted is the DNS response record we are going to focus in on. You can alre
 
 <img src="https://i.imgur.com/InzXEOS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<b>DNS Query Response Answer</b>
+<b>Target DNS Query Response - Answer</b>
 
 Wireshark also grants the capability of looking at the response in depth. Take note of how response answers appear.
 
@@ -43,46 +43,35 @@ Wireshark also grants the capability of looking at the response in depth. Take n
 
 <h2>Wireshark: Reviewing DNS Requests After My DNS Server Is Active</h2>
 
-<b>Target DNS Query Responses</b>
+<b>My Target DNS Query Responses</b>
+
+Notice that many of the DNS Query Response Records have a new "irregular" address of 0.0.0.0. That is because the DNS server is responding to the requests with what many would call a DNS sinkhole address. We essentially respond with the address of 0.0.0.0 and send the ads there instead of my PC's address essentially blocking the ads from ever reaching my computer.
 
 <img src="https://i.imgur.com/wup6m61.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+
+<b>Target DNS Query Response - Answer</b>
+
+Here are the details (answer) of the query response. 
+
 <img src="https://i.imgur.com/mD9L0JS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<h2>Environments Used </h2>
+<h2>Resources and Supplies Used</h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Raspberry Pi 5</b>
+- <b>Mini SD Card</b>
+- <b>Mini SD Card Reader</b>
+- <b>Computer</b>
+- <b>All-in-One Modem</b> - Would recommend buying third party equipment so you dont run into roadblocks like I did.
 
-<h2>Program walk-through:</h2>
+<h2>DNS Server Setup</h2>
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/k3jtb6N.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<b>I will avoidi showing how I set up my Raspberry Pi as there are many tutorials that anyone can watch on Youtube. Just make sure you use the following command to get your Raspberry Pi updated with the latest updates/patches!</b>
+
+- sudo apt update
+
+
+
 
 <!--
  ```diff
