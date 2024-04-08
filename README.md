@@ -90,6 +90,8 @@ This will essentially send a request to the URL that is in the command to grab a
 <b>Adguard Home provides my DNS server with a variety of configuration settings so that I  am able to fine tune my server how I want it. I will quickly go over these settings. A simple Google search will provide much more information if it is needed.</b>
 
 <b>Dashboard</b>
+
+
 <b>Settings</b>
 - General Settings
 - DNS Settings
