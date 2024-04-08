@@ -23,9 +23,15 @@ Wireshark is a packet analyzer. I can select the type of network traffic I want 
 <b> </b>
 
 <b>Full View of My Wireshark Instance</b>
-<img src="https://i.imgur.com/yf2Zo2k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Here is an open instance of Wireshark capturing network traffic for what is passing through my ethernet connection. At the top, I have typed "DNS" to filter for the DNS protocol records. To be more specific, we will be looking at ad requests and responses. Whenever I navigate to a website, the initial request for me to join the site will essentially respond with the website I am looking for along with plenty of other responses directing ads back to my browser view.
+<img src="https://i.imgur.com/dBf0JP4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+In this image, all the highlighted records 
 
 <b>My Target DNS Query Response</b>
+
+Highlighted is the DNS 
 <img src="https://i.imgur.com/Vs7f9CF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <b>DNS Query Response Answer</b>
