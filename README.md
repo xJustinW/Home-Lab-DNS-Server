@@ -92,12 +92,30 @@ This will essentially send a request to the URL that is in the command to grab a
 <b>Dashboard</b>
 
 
+<img src="https://i.imgur.com/iwyg691.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 <b>Settings</b>
-- General Settings
-- DNS Settings
-- Encryption Settings
-- Client Settings
-- DHCP Settings
+- General Settings - There are settings for log and statistic configuration. There are also quick activate options for safe searching and parental controlling.
+<img src="https://i.imgur.com/lhjZkeT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+- DNS Settings - I can define various different upstream DNS servers and load-balance across the address. Adguard will use the fastest address most often for performance boosts. I can also define Fallback DNS servers and Bootstrap DNS servers. I can even define a private reverse DNS server. Lastly, there are cache and server configurations I can mess with to fine-tune my DNS sever.
+<img src="https://i.imgur.com/CCT3JOR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+- Encryption Settings - Here, I can set up security features like DOH and DNSSEC. THere are other features such as SSL certificate chains andd private key paths.
+<img src="https://i.imgur.com/uyeed5p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+- Client Settings - This page will show me my current persisten clients and runtime clients. I would need to set up persistant clients but there is the autmoated runtime clients section that shows current addresses that are using my DNS server.
+<img src="https://i.imgur.com/i18AhQU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+- DHCP Settings - If my router for whatever reason does not utilize DCHP, I can use my DNS server to provide DHCP configuration if activated. I can also provide static leases if the DHCP server is set up.
+<img src="https://i.imgur.com/SIeXn7Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 
 
 <b>Filters</b>
