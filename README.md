@@ -33,13 +33,13 @@ In short, the red highlighted records are all ad responses that are being direct
 
 Highlighted is the DNS response record we are going to focus in on. You can already tell that without any protection, the response from my router shows the DNS record and from there will appear on the website when I am browsing. That is a successful ad request and response. If I click on the ad, I will get linked to the ad website. To quickly touch the surface level risks of ads, simply by clicking an ad can put your computer at risk. You may be taken to an "ad" site that can use different phising tactics that can inevitably install malware onto your system.
 
-<img src="https://i.imgur.com/InzXEOS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OII2Z0K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <b>Target DNS Query Response - Answer</b>
 
 Wireshark also grants the capability of looking at the response in depth. Take note of how response answers appear.
 
-<img src="https://i.imgur.com/S5SMN2h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/M2Vf6PV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Wireshark: Reviewing DNS Requests After My DNS Server Is Active</h2>
 
