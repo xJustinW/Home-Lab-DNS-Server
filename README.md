@@ -119,14 +119,25 @@ This will essentially send a request to the URL that is in the command to grab a
 
 
 <b>Filters</b>
-- DNS Blocklists
-- DNS Allowlists
-- DNS Rewrites
-- Blocked Services
-- Custom Filtering Rules
+
+- DNS Blocklists - I can block individual DNS addresses or choose some of the provided lists that are curated for filtering out commonly known phishing sites.
+- DNS Allowlists - I can allow certain DNS addresses if I am running tighter security on my network.
+- DNS Rewrites - I can assign custom DNS responses for specific domain names.
+- Blocked Services - I can block prominent sites and services with the flip of a toggle. This makes it easy to block out services like gaming launchers so I can limit what games are played over the network.
+
+<img src="https://i.imgur.com/BFazqc3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Custom Filtering Rules - I have the option to add specific rules for filtering.
+
+
 <b>Query Logs</b>
 
 
+Last but not least, I have a page where I can actively monitor the logs of each request and response that goes through my DNS server.
+
+<img src="https://i.imgur.com/aqSK7XS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<b>All in all, I had a great time learning about creating my own servers and how to protect them. There are many 3rd party applications that bundle some of these features up and make it easy for anyone to set up and learn. I am constantly learning something new everyday and there will be more to come!!!</b>
 <!--
  ```diff
 - text in red
