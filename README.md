@@ -23,7 +23,7 @@ Wireshark is a packet analyzer. I can select the type of network traffic I want 
 
 Here is an open instance of Wireshark capturing network traffic for what is passing through my ethernet connection. At the top, I have typed "DNS" to filter for the DNS protocol records. To be more specific, we will be looking at ad responses. Whenever I navigate to a website, the initial request for me to reach the site will also come with plenty of ads that are requesting to reach me as well.
 
-<img src="https://i.imgur.com/T104SFS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 In short, the red highlighted records are all ad responses that are being directed to my browser's view of the website when the ad request returns a successful response.
 
@@ -32,13 +32,13 @@ In short, the red highlighted records are all ad responses that are being direct
 
 Highlighted is the DNS response record we are going to focus in on. You can already tell that without any protection, the response from my router shows the DNS record and from there will appear on the website when I am browsing. That is a successful ad request and response. If I click on the ad, I will get linked to the ad website. To quickly touch the surface level risks of ads, simply by clicking an ad can put your computer at risk. You may be taken to an "ad" site that can use different phising tactics that can inevitably install malware onto your system.
 
-<img src="https://i.imgur.com/OII2Z0K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <b>Target DNS Query Response - Answer</b>
 
 Wireshark also grants the capability of looking at the response in depth. Take note of how response answers appear.
 
-<img src="https://i.imgur.com/M2Vf6PV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Wireshark: Reviewing DNS Requests After My DNS Server Is Active</h2>
 
@@ -46,14 +46,14 @@ Wireshark also grants the capability of looking at the response in depth. Take n
 
 Notice that many of the DNS Query Response Records have a new "irregular" address of 0.0.0.0. That is because the DNS server is responding to the requests with what many would call a DNS sinkhole address. We essentially respond with the address of 0.0.0.0 and send the ads there instead of my PC's address essentially blocking the ads from ever reaching my computer.
 
-<img src="https://i.imgur.com/wup6m61.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 <b>Target DNS Query Response - Answer</b>
 
 Here are the details (answer) of the query response. 
 
-<img src="https://i.imgur.com/mD9L0JS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Resources and Supplies Used</h2>
 
