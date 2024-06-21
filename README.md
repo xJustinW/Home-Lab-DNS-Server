@@ -73,16 +73,16 @@ Once you have SSH'ed into the Pi and updated it, run the following command:
 - curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 
 <b> </b>
-This will essentially send a request to the URL that is in the command to grab and download Adguard Home onto the Pi. Once the download was finished, the CLI prompted me with an address for me to navigate to complete setup of Adguard Home on the PI. 
+This will essentially send a request to the URL that is in the command to grab and download Adguard Home onto the Pi. Once the download was finished, the CLI prompted me with an address to navigate to a landing page to complete setup of Adguard Home on the PI. 
 <b> </b>
 
-<img src="https://i.imgur.com/ZyNaGXS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZyNaGXS.png" height="80%" width="80%" alt="AdGuard CLI Prompt"/>
 
 <b> </b>
 The address led me to a login page where I had to update my password to a strong password, of course. Then, there was a setup page I had to follow in order to get my devices to connect to the DNS server. 
 <b> </b>
 
-<img src="https://i.imgur.com/R70mG4e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/R70mG4e.png" height="80%" width="80%" alt="Setup Page"/>
 
 <b> </b>
 Since my ISP does not allow me to update the DNS settings of the provided all-in-one modem, I had to manually input the given DNS server addresses on my devices. Essentially, I went to my network settings on each device and navigated to the DNS Configuration settings to get each device to use the DNS server. When I buy my own router, I will be able to setup the DNS addresses at the router level to avoid having to add the addresses on every new device. This has not become annoying yet as I do not have many devices but that time will come.
@@ -95,28 +95,28 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 <b>Dashboard</b>
 
 
-<img src="https://i.imgur.com/ZFbz74H.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZFbz74H.png" height="80%" width="80%" alt="AdGuard Dashboard"/>
 
 
 <b>Settings</b>
 - General Settings - There are settings for log and statistic configuration. There are also quick activate options for safe searching and parental controlling.
-<img src="https://i.imgur.com/LzqEKZW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LzqEKZW.png" height="80%" width="80%" alt="General Settings"/>
 
 
-- DNS Settings - I can define various different upstream DNS servers and load-balance across the address. Adguard will use the fastest address most often for performance boosts. I can also define Fallback DNS servers and Bootstrap DNS servers. I can even define a private reverse DNS server. Lastly, there are cache and server configurations I can mess with to fine-tune my DNS sever.
-<img src="https://i.imgur.com/XAL7izG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- DNS Settings - I can define various different upstream DNS servers and load-balance across the addresses. Adguard will use the fastest address most often for better performance. I can also define Fallback DNS servers and Bootstrap DNS servers. I can even define a private reverse DNS server. Lastly, there are cache and server configurations I can mess with to fine-tune my DNS sever.
+<img src="https://i.imgur.com/XAL7izG.png" height="80%" width="80%" alt="DNS Settings"/>
 
 
-- Encryption Settings - Here, I can set up security features like DOH and DNSSEC. THere are other features such as SSL certificate chains andd private key paths.
-<img src="https://i.imgur.com/DP2duz5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- Encryption Settings - Here, I can set up security features like DOH and DNSSEC. There are other features such as SSL certificate chains and private key paths.
+<img src="https://i.imgur.com/DP2duz5.png" height="80%" width="80%" alt="Encryption Settings"/>
 
 
-- Client Settings - This page will show me my current persisten clients and runtime clients. I would need to set up persistant clients but there is the autmoated runtime clients section that shows current addresses that are using my DNS server.
-<img src="https://i.imgur.com/335kgwF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- Client Settings - This page will show me my current persistent clients and runtime clients. I would need to set up persistant clients but there is the automated runtime clients section that shows current addresses that are using my DNS server.
+<img src="https://i.imgur.com/335kgwF.png" height="80%" width="80%" alt="Client Settings"/>
 
 
 - DHCP Settings - If my router for whatever reason does not utilize DCHP, I can use my DNS server to provide DHCP configuration if activated. I can also provide static leases if the DHCP server is set up.
-<img src="https://i.imgur.com/RUQwqWA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RUQwqWA.png" height="80%" width="80%" alt="DHCP Settings"/>
 
 
 
@@ -125,12 +125,12 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 
 - DNS Blocklists - I can block individual DNS addresses or choose some of the provided lists that are curated for filtering out commonly known phishing sites.
 - DNS Allowlists - I can allow certain DNS addresses if I am running tighter security on my network.
-- DNS Rewrites - I can assign custom DNS responses for specific domain names.
-- Blocked Services - I can block prominent sites and services with the flip of a toggle. This makes it easy to block out services like gaming launchers so I can limit what games are played over the network.
+- DNS Rewrites - I can assign custom DNS responses for specific domain names. The linux equivalent would be to update the hostname of IP addresses within /etc/hosts.
+- Blocked Services - I can block prominent sites and services with the flip of a toggle switch. This makes it easy to block out services like gaming launchers so I can limit what games are played over the network.
 
-<img src="https://i.imgur.com/eD4YWdH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/eD4YWdH.png" height="80%" width="80%" alt="Filters"/>
 
-- Custom Filtering Rules - I have the option to add specific rules for filtering.
+- Custom Filtering Rules - I have the option to add specific rules for filtering as well.
 
 
 <b>Query Logs</b>
@@ -138,9 +138,13 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 
 Last but not least, I have a page where I can actively monitor the logs of each request and response that goes through my DNS server.
 
-<img src="https://i.imgur.com/bhazQu8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bhazQu8.png" height="80%" width="80%" alt="Query Logs"/>
 
-<b>All in all, I had a great time learning about creating my own servers and how to protect them. There are many 3rd party applications that bundle some of these features up and make it easy for anyone to set up and learn. I am constantly learning something new everyday and there will be more to come!!!</b>
+<b>All in all, I had a great time learning about creating my own DNS server and how to protect them. There are many 3rd party applications that bundle some of these features up and make it easy for anyone to set up and learn. I am constantly learning something new everyday and there will be more to come! Enjoy some pictures of my Raspberry Pi!!! PS: Ignore the wires! I am in the process of cleaning those up!</b>
+
+<img src="https://i.imgur.com/qvNowZO.jpeg" height="80%" width="80%" alt="Pi 5 1"/>
+
+<img src="https://i.imgur.com/OXNc5Ep.jpeg" height="80%" width="80%" alt="Pi 5 2"/>
 <!--
  ```diff
 - text in red
