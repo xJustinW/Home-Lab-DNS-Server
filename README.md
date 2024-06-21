@@ -1,8 +1,8 @@
 <h1>Home Lab: Personal DNS Server</h1>
-In this lab, I am documenting the steps I take in order to install Adguard Home on a Raspberry Pi to create my own personal DNS Server. The DNS server's main role is to increase privacy and security for any device that is on my network.
+In this lab, I am documenting the steps I take in order to install Adguard Home on a Raspberry Pi to create my own personal DNS Server. The DNS server's main role is to increase privacy and security for any device that is on my network that is browsing internet. I will be adding different filters like block lists, enabling various encryption settings and configuring upstream DNS servers for improved, faster queries.
 
 <h2>Why I Created My Own DNS Server</h2>
-Creating my own DNS server will allow me to control my network's domain name resolution process. To dive deeper, having my own DNS server grants me with the capabilities of privacy and security. There are even very small instances of performance boosts that can be observed. Some of the benefits of having my own DNS server are as follows:
+Creating my own DNS server will allow me to control my network's domain name resolution process. To dive deeper, having my own DNS server grants me with the capabilities of introducing better privacy and security practices. There are even very small instances of performance boosts that can be observed. Some of the benefits of having my own DNS server are as follows:
 
 - AD Blocking
 - Reduced Risk of Malware/Phishing
@@ -23,22 +23,22 @@ Wireshark is a packet analyzer. I can select the type of network traffic I want 
 
 Here is an open instance of Wireshark capturing network traffic for what is passing through my ethernet connection. At the top, I have typed "DNS" to filter for the DNS protocol records. To be more specific, we will be looking at ad responses. Whenever I navigate to a website, the initial request for me to reach the site will also come with plenty of ads that are requesting to reach me as well.
 
-<img src="" height="80%" width="80%" alt="Wireshark 1"/>
+<img src="https://i.imgur.com/0CE8G4l.png" height="80%" width="80%" alt="Wireshark 1"/>
 
 In short, the red highlighted records are all ad responses that are being directed to my browser's view of the website when the ad request returns a successful response.
 
 <b>My Target DNS Query Response</b>
 
 
-Highlighted is the DNS response record we are going to focus in on. You can already tell that without any protection, the response from my router shows the DNS record and from there will appear on the website when I am browsing. That is a successful ad request and response. If I click on the ad, I will get linked to the ad website. To quickly touch the surface level risks of ads, simply by clicking an ad can put your computer at risk. You may be taken to an "ad" site that can use different phising tactics that can inevitably install malware onto your system.
+Highlighted is the DNS response record we are going to focus in on. You can already tell that without any protection, the response from my router shows the DNS record and from there will appear on the website when I am browsing. That is a successful ad request and response. If I click on the ad, I will get linked to the ad website. To quickly touch the surface level risks of ads, simply by clicking an ad can put your computer at risk. You may be taken to an "ad" site that can use different malware tactics that can inevitably install malware onto your system.
 
-<img src="" height="80%" width="80%" alt="Wireshark 2"/>
+<img src="https://i.imgur.com/kEJXdEd.png" height="80%" width="80%" alt="Wireshark 2"/>
 
 <b>Target DNS Query Response - Answer</b>
 
 Wireshark also grants the capability of looking at the response in depth. Take note of how response answers appear.
 
-<img src="" height="80%" width="80%" alt="Wireshark 3"/>
+<img src="https://i.imgur.com/hCDsIAV.png" height="80%" width="80%" alt="Wireshark 3"/>
 
 <h2>Wireshark: Reviewing DNS Requests After My DNS Server Is Active</h2>
 
@@ -46,14 +46,14 @@ Wireshark also grants the capability of looking at the response in depth. Take n
 
 Notice that many of the DNS Query Response Records have a new "irregular" address of 0.0.0.0. That is because the DNS server is responding to the requests with what many would call a DNS sinkhole address. We essentially respond with the address of 0.0.0.0 and send the ads there instead of my PC's address essentially blocking the ads from ever reaching my computer.
 
-<img src="" height="80%" width="80%" alt="Wireshark 4"/>
+<img src="https://i.imgur.com/LuZQx5A.png" height="80%" width="80%" alt="Wireshark 4"/>
 
 
 <b>Target DNS Query Response - Answer</b>
 
 Here are the details (answer) of the query response. 
 
-<img src="" height="80%" width="80%" alt="Wireshark 5"/>
+<img src="https://i.imgur.com/MVAe3yA.png" height="80%" width="80%" alt="Wireshark 5"/>
 
 <h2>Resources and Supplies Used</h2>
 
