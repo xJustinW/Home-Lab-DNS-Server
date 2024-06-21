@@ -95,28 +95,28 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 <b>Dashboard</b>
 
 
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZFbz74H.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 <b>Settings</b>
 - General Settings - There are settings for log and statistic configuration. There are also quick activate options for safe searching and parental controlling.
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LzqEKZW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 - DNS Settings - I can define various different upstream DNS servers and load-balance across the address. Adguard will use the fastest address most often for performance boosts. I can also define Fallback DNS servers and Bootstrap DNS servers. I can even define a private reverse DNS server. Lastly, there are cache and server configurations I can mess with to fine-tune my DNS sever.
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XAL7izG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 - Encryption Settings - Here, I can set up security features like DOH and DNSSEC. THere are other features such as SSL certificate chains andd private key paths.
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DP2duz5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 - Client Settings - This page will show me my current persisten clients and runtime clients. I would need to set up persistant clients but there is the autmoated runtime clients section that shows current addresses that are using my DNS server.
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/335kgwF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 - DHCP Settings - If my router for whatever reason does not utilize DCHP, I can use my DNS server to provide DHCP configuration if activated. I can also provide static leases if the DHCP server is set up.
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RUQwqWA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
@@ -128,7 +128,7 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 - DNS Rewrites - I can assign custom DNS responses for specific domain names.
 - Blocked Services - I can block prominent sites and services with the flip of a toggle. This makes it easy to block out services like gaming launchers so I can limit what games are played over the network.
 
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/eD4YWdH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 - Custom Filtering Rules - I have the option to add specific rules for filtering.
 
@@ -138,7 +138,7 @@ Since my ISP does not allow me to update the DNS settings of the provided all-in
 
 Last but not least, I have a page where I can actively monitor the logs of each request and response that goes through my DNS server.
 
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bhazQu8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <b>All in all, I had a great time learning about creating my own servers and how to protect them. There are many 3rd party applications that bundle some of these features up and make it easy for anyone to set up and learn. I am constantly learning something new everyday and there will be more to come!!!</b>
 <!--
